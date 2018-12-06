@@ -1,0 +1,16 @@
+===============
+Instructions:
+===============
+- You do not need to configure R2, and the PCs
+- R1 and R3 have G0/0, G0/1, and default routes
+  already configured
+
+1. Configure a GRE VPN tunnel
+    from the R1 LAN 192.168.1.0/24
+    to the R3 LAN 192.168.3.0/24
+2. Tunnel0 192.168.2.0/24
+     R1-192.168.2.1
+     R3-192.168.2.2 
+3. Use static routes on R1 and R3 (next hop address)
+    to route traffic across tunnel0
+4. You are successful when you can ping from PC-A to PC-C
